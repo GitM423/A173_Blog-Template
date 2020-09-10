@@ -1,0 +1,23 @@
+<%- include("./partials/header") %>
+
+<section class="article">
+  <h1><%= obj.title %></h1>
+  <img src="<%= obj.url %>" alt="" />
+  <article>
+    <div class="article-info">
+      <div class="img">
+        <img src="<%= obj.author_bild %>" alt="" />
+      </div>
+      <div class="article-further-info">
+        <h4><%= obj.author %></h4>
+        <div>
+          <%= obj.published_at %><%= Math.ceil(obj.body.length / 100) %>
+        </div>
+      </div>
+      <button>Twitter</button>
+    </div>
+    <p><%= obj.body %></p>
+  </article>
+</section>
+
+<%- include("./partials/read-next") %> <%- include("./partials/footer") %>

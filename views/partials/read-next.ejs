@@ -1,0 +1,22 @@
+<section class="articles-list">
+  <h2>What to read next</h2>
+  <div class="grid grid-3">
+    <!-- prettier-ignore -->
+    <%
+    let randomList = [];
+    while (randomList.length < 9) {
+        let random = Math.floor(Math.random() * data.length)
+        if (!randomList.includes(random) && random != obj.id) {
+            randomList.push(random)
+        } 
+    }
+    %>
+    <!-- prettier-ignore-end -->
+    <% for( let i = 0; i < randomList.length; i++ ) { %>
+    <a href="/article/<%= data[randomList[i]].id %> " class="grid-item">
+      <img src="<%= data[randomList[i]].url %> " alt="" />
+      <h3><%= data[randomList[i]].title %></h3>
+    </a>
+    <% } %>
+  </div>
+</section>

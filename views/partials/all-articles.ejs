@@ -1,0 +1,11 @@
+<section class="articles-list">
+  <h2>All articles</h2>
+  <div class="grid grid-2">
+    <% for( let i = 1; i < data.length; i++ ) { %>
+    <a href="/article/<%= data[i].id %> " class="grid-item">
+      <img src="<%= data[i].url %> " alt="" />
+      <h3><%= data[i].title %></h3>
+    </a>
+    <% } %>
+  </div>
+</section>

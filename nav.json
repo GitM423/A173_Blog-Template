@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Home",
+    "url": "/",
+    "file": "index"
+  },
+  {
+    "name": "New Article",
+    "url": "/new-article",
+    "file": "new-article"
+  }
+]

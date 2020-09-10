@@ -1,0 +1,9 @@
+<%- include("./partials/header") %>
+
+<section>
+  <a href="/article/<%= data[0].id %> ">
+    <img src="<%= data[0].url %>" alt="" />
+    <h1 class="index-h1"><%= data[0].title %></h1>
+  </a>
+</section>
+<%- include("./partials/all-articles") %> <%- include("./partials/footer") %>
